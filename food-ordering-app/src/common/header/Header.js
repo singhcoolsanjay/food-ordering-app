@@ -6,13 +6,16 @@ import Logo from '../../assets/logo.png';
 class Header extends Component {
     render(){
         return(
-            <div>
+            <div className="Header">
              <img className="Logo" src={Logo} alt="logo"/>
+
                 <ul className="menu-ul">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/details">Details</Link></li>
-                    <li><Link to="/checkout">Checkout</Link></li>                  
+                    <li><Link to="/checkout">Checkout</Link></li> 
+                                    
                 </ul>
+                <button>LOGIN</button> 
             </div>    
         )
     }
